@@ -12,6 +12,6 @@ func BenchmarkFib10(b *testing.B) {
 
 func BenchmarkFib20(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		var _ = Fib(20)
+		Fib(20)
 	}
 }
